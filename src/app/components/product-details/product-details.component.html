@@ -1,0 +1,10 @@
+<mat-card>
+  <mat-card-title>Details</mat-card-title>
+  <mat-card-content>
+    <ng-container *ngIf="details$ | async as item">{{ item.id }}<br>
+      {{item.title}}<br>
+      {{item.description}}<br>
+      <img style="width: 200px" src="{{item.image}}">
+    </ng-container>
+  </mat-card-content>
+</mat-card>
